@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>Tienda de ropa</h1>
+
+    <div class="contenedor-icono">
+        <div class="contenedor-icono-carrito">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icono-carrito"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+            </svg>
+            <div class="contador-productos">
+                <span id="contador-productos">0</span>
+            </div>
+        </div>
+
+        <div class="contenedor-productos-carrito oculto">
+            <div class="fila-producto oculto">
+                <div class="producto-carrito">
+                    <div class="info-producto-carrito">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Zapatos Nike</p>
+                        <span class="precio-producto-carrito">$80</span>
+                    </div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icono-cerrar"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="total-carrito oculto">
+                <h3>Total:</h3>
+                <span class="total-pagar">$200</span>
+            </div>
+            <p class="carrito-vacio">El carrito está vacío</p>
+        </div>
+    </div>
+
+</header>
+
+<div class="contenedor-articulos">
+    <div class="articulo">
+        <figure>
+            <img
+                src="./multimedia/img/buzo-con-capucha-camo-series-estampado-integral.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-producto">
+            <h2>Buzo adidas</h2>
+            <p class="precio">$8000</p>
+            <button class="btn-agregar-carrito">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="articulo">
+        <figure>
+            <img
+                src="./multimedia/img/buzo-estampado-archive-cuello-redondo.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-producto">
+            <h2>buzo vintage</h2>
+            <p class="precio">$10000</p>
+            <button class="btn-agregar-carrito">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="articulo">
+        <figure>
+            <img
+                src="./multimedia/img/jens 1.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-producto">
+            <h2>Jeans mom</h2>
+            <p class="precio">$5000</p>
+            <button class="btn-agregar-carrito">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="articulo">
+        <figure>
+            <img
+                src="./multimedia/img/jens 2.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-producto">
+            <h2>Jeans mom marron</h2>
+            <p class="precio">$9000</p>
+            <button class="btn-agregar-carrito">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="articulo">
+        <figure>
+            <img src="./multimedia/img/nike 1.webp"alt="producto"/>
+        </figure>
+        <div class="info-producto">
+            <h2>Nike beige</h2>
+            <p class="precio">$20000</p>
+            <button class="btn-agregar-carrito">Añadir al carrito</button>
+        </div>
+    </div>
+
+	<div class="articulo">
+        <figure>
+            <img src="./multimedia/img/nike 2.webp"alt="producto"/>
+        </figure>
+        <div class="info-producto">
+            <h2>Nike air force clásicas</h2>
+            <p class="precio">$18000</p>
+            <button class="btn-agregar-carrito">Añadir al carrito</button>
+        </div>
+    </div>
+
+</div>
+
+
+<footer>
+    <div class="contenedorFooter">
+        
+            <button id="iniciarSesion">Iniciar Sesion</button>
+        
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
